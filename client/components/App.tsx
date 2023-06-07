@@ -1,21 +1,17 @@
 import { useState, useEffect } from 'react'
-
+import { Outlet } from 'react-router-dom'
 import { getWelcome } from '../apiClient'
+import cities from '../../data/cities'
+import { getCityTemps } from '../api/weatherApi'
+
+import Nav from './Nav'
 
 function App() {
-  const [welcomeStatement, setWelcomeStatement] = useState('')
 
-  useEffect(() => {
-    getWelcome()
-      .then((res) => {
-        setWelcomeStatement(res.statement)
-      })
-      .catch((err) => {
-        console.error(err.message)
-      })
-  })
-
-  return <h1>{welcomeStatement}</h1>
+  return <>
+  <Nav />
+  <Outlet />
+  </>
 }
 
 export default App
