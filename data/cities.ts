@@ -21,7 +21,11 @@ const cities: Cities = {
   Chicago: {
     lat: 41.87,
     long: -87.62
-  }
+  },
+  Stockholm: {
+    lat: 59.32,
+    long: 18.06
+  },
 }
 
 export default cities
