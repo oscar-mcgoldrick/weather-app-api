@@ -4,6 +4,7 @@ import { Forecast } from '../../models/forecast'
 
 
 export function getCityTemps(city: CityData) {
+  console.log(city)
   return request.get(`https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.long}&hourly=temperature_2m`)
     .then(data =>  [data.body.hourly.time, data.body.hourly.temperature_2m] as Forecast)
 }

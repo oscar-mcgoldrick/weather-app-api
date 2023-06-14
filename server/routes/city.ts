@@ -9,11 +9,11 @@ dotenv.config({ path: envPath })
 const router = express.Router()
 
 // GET /api/v1/welcome/
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
   console.log(req.body)
-  request.get(`https://api.api-ninjas.com/v1/city?name=stockholm`).set('X-Api-Key', 'zaByrX4AXm8PRR6OcKU2FDzdyBoNUONkpT94ljNE')
-  .then(res => {
-    return res.body})
+  request.get(`https://api.api-ninjas.com/v1/city?name=${req.body['cityName']}`).set('X-Api-Key', 'zaByrX4AXm8PRR6OcKU2FDzdyBoNUONkpT94ljNE')
+  .then(response => {
+    return res.json(response.body)})
 })
 
 export default router

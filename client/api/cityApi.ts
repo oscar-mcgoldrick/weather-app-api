@@ -1,8 +1,9 @@
 import request from "superagent";
 
-export function getCityInfo (cityName: number) {
+export function getCityInfo (cityName: string) {
   return request
-    .get('/api/v1/city')
+    .post('/api/v1/city')
+    .send({cityName})
     .then((res) => {return res.body})
     .catch(e => console.log(e.message))
 }
