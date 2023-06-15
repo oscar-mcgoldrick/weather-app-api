@@ -6,9 +6,10 @@ function Nav () {
 
   return <>
   <ul className="nav">
+  <Link to ='/'><button>Home</button></Link>
+  <Link to={`/city/add`}><button>Look up a city</button></Link>
     {cityNames.map(cityName => (<Link to={`/city/${cityName}`} key={cityName}><button>{cityName}</button></Link>))}
   </ul>
-  <Link to={`/city/add`}><button>Or look up your own city!</button></Link>
   </>
 }
 

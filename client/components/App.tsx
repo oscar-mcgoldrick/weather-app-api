@@ -11,8 +11,10 @@ function App() {
 
   return <>
   <Header />
+  <div className="main">
   <Nav />
   <Outlet />
+  </div>
   </>
 }
 

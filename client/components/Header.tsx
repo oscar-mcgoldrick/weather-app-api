@@ -1,6 +1,6 @@
 export function Header () {
   return <>
-  <header>
+  <header className="header">
     <h1>
       Wagwan it's the flipping weather 
     </h1>

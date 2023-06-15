@@ -1,0 +1,21 @@
+.main {
+  background-color: rgb(76, 133, 167);
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  flex-basis: 6%;
+}
+
+.nav button {
+  margin-top: .2rem;
+  box-shadow: 0 9px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.header h1{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 3px 1px 2px rgba(179, 175, 63, 0.591);
+}

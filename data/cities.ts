@@ -18,14 +18,26 @@ const cities: Cities = {
     lat: -36.85,
     long: 174.76
   }, 
-  Chicago: {
+  Hamilton: {
     lat: 41.87,
     long: -87.62
   },
-  Stockholm: {
+  Dunedin: {
     lat: 59.32,
     long: 18.06
   },
+  Queenstown: {
+    lat: 10,
+    long: 15
+  },
+  Tauranga: {
+    lat: 11,
+    long: 19
+  },
+  Nelson: {
+    lat: 3,
+    long: 0
+  }
 }
 
 export default cities
